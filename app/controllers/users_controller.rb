@@ -21,7 +21,7 @@ class UsersController < ApplicationController
 
 
     def find_tracks
-        tracks = RSpotify::Track.search(params[:q].to_s, limit: 10)
+        tracks = RSpotify::Track.search(params[:q].to_s, limit: 20)
         render json: { tracks: tracks }
     end
 

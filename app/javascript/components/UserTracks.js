@@ -9,16 +9,25 @@ class UserTracks extends Component {
     
 
     render(){
-        console.log(this.props.tracks[0])
         const userTracks = this.props.tracks[0].map(track => <div key={track.id} className="overview__related"><div className="related-artists"> <div className="related-artist" >
-        <span className="related-artist__name">
-         
-        {track.name}
-        {track.artists.map(item => {
-          return <span> - {item.name}</span>;
-        })}   
-         
-        </span> <button className="button-light" href="#" onClick={this.props.del_trac} data-id={track.id}>Remove </button></div></div></div>)
+        <div className="on-left">
+            <img src={track.album.images[2].url} height="64" width="64"/>
+            <span className="related-artist__name">
+            
+            {track.name}
+            {track.artists.slice(0, 3).map(item => {
+            return <span> - {item.name}</span>;
+            })}   
+            
+            </span>
+        </div>
+        <div className="on-left button_my"> 
+            <span className="button-div"> 
+                <button className="button-light" href="#" onClick={this.props.del_trac} data-id={track.id}>Remove </button>
+            </span>
+        </div>
+        </div></div></div>)
+        
         return(
             <div className="user_my">
            

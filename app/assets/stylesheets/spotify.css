@@ -3,6 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
   }
 
+
   body a {
     color: #000000;
   }
@@ -11,11 +12,39 @@ body {
     color: #c8c8c8;
   }
 
+
+  .on-left{
+      float: left;
+  }
+
+  .on-right{
+        float: right;
+   }
+
   .user_my{
       float:left;
       padding: 10px;
       width: 50%;
   }
+
+  .user_my_loggin{
+    float:left;
+    padding: 10px;
+  }
+
+  .button_my{
+      position: absolute;
+      right: 20px;
+      margin-top: 18px;
+      margin-left: 20px;
+  }
+
+  .button_my_add{
+    position: absolute;
+    right: 52%;
+    margin-top: 18px;
+    margin-left: 20px;
+}
 
   .search_my{
     float:left;
@@ -32,11 +61,17 @@ body {
   .header {
     background: #282828;
     padding: 10px;
-    color: #aaaaaa;
+    color: #eeeded;
     border-bottom: 1px solid #181818;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+
+  }
+
+  .head_my {
+    font-size: 36px;
+    font-weight: 100; 
   }
   .header .page-flows .flow {
     font-size: 20px;
@@ -517,12 +552,16 @@ body {
     background: #1ed760;
     color: white;
     border: 1px solid #1ed760;
-    float: left;
+    float: right;
   }
   .button-dark:hover {
     background: #43e57d;
   }
-  
+
+  .button-div{
+    margin-bottom: 20px;
+  }
+
   .button-light {
     background: none;
     color: #c8c8c8;

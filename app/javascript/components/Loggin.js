@@ -8,7 +8,7 @@ class Loggin extends Component {
 
     render(){
         return(
-            <div className="center_my user_my"><button className="button-dark" href="/auth/spotify"><a  href="/auth/spotify">Log In</a></button></div>
+            <div className="center_my user_my_loggin"><button className="button-dark" href="/auth/spotify"><a  href="/auth/spotify">Log In</a></button></div>
         )
     }
 }
