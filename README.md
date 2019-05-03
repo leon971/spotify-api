@@ -7,13 +7,13 @@
 ## Entity definition
 - [ ] The main entity of WEB system is a track
 - [ ] Entity name is track
-- [Track::external_ids String]
-- [Track:id String]
+- [Track::external_ids String 1-9,147,483,647 symbols]
+- [Track:id String 1-9,147,483,647 symbols]
 - [Track:is_playable bolean]
-- [Track:name String]
-- [Track:type string]
+- [Track:name String 1-9,147,483,647 symbols]
+- [Track:type string 1-9,147,483,647 symbols]
 - [Track:popularity int 0-100]
-- [Track:duration_ms int]
+- [Track:duration_ms int 1-2,147,483,647]
 
 ## API definition
 - [https://api.spotify.com/v1/tracks] - GET Get a Track Return Track
