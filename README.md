@@ -12,14 +12,14 @@
 - [Track:is_playable bolean]
 - [Track:name String]
 - [Track:type string]
-- [Track:popularity int]
+- [Track:popularity int 0-100]
 - [Track:duration_ms int]
 
 ## API definition
-- [https://api.spotify.com/v1/tracks] 
-- [https://api.spotify.com/v1/me/tracks] 
-- [https://api.spotify.com/v1/me/tracks/contains]
-- [https://api.spotify.com/v1/me]
+- [https://api.spotify.com/v1/tracks] - GET Get a Track
+- [https://api.spotify.com/v1/me/tracks]  - POST
+- [https://api.spotify.com/v1/me/tracks/contains] - GET
+- [https://api.spotify.com/v1/me] - GET 
 
 ## UI definition
 - [] https://wireframe.cc/cCPWVw

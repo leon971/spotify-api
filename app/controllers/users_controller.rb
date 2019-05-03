@@ -5,14 +5,11 @@ class UsersController < ApplicationController
     def index
     end
     
-    def main
-        
+    def main 
     end
 
     def spotify
         spotify_user = RSpotify::User.new(request.env['omniauth.auth'])
-
-    
         hash = spotify_user.to_hash
         session[:user_hash] = hash
         session[:user_loggedin] = 1
@@ -27,7 +24,6 @@ class UsersController < ApplicationController
 
     def get_user_info
         if session[:user_loggedin].to_i == 1
-            logger.fatal('sadas')
             spotify_user = RSpotify::User.new(session[:user_hash])
             render json: {
                 loggedin: 1,
