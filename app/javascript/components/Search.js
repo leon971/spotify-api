@@ -6,6 +6,7 @@ class Search extends Component {
     }
 
     render(){
+        console.log(this.props.searchResults)
         var searchResults = this.props.searchResults.map(track => <div key={track.id} className="overview__related"><div className="related-artists"> <div className="related-artist" >
 
             <img src={track.album.images[2].url} height="64" width="64"/>
