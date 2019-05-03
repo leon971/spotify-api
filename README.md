@@ -16,10 +16,10 @@
 - [Track:duration_ms int]
 
 ## API definition
-- [https://api.spotify.com/v1/tracks] - GET Get a Track
-- [https://api.spotify.com/v1/me/tracks]  - POST
-- [https://api.spotify.com/v1/me/tracks/contains] - GET
-- [https://api.spotify.com/v1/me] - GET 
+- [https://api.spotify.com/v1/tracks] - GET Get a Track Retrun Track
+- [https://api.spotify.com/v1/me/tracks]  - POST Add Track to User
+- [https://api.spotify.com/v1/me/tracks/contains] - GET Get Track information
+- [https://api.spotify.com/v1/me] - GET Get Current User's Profile
 
 ## UI definition
 - [] https://wireframe.cc/cCPWVw
