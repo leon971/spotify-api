@@ -9,7 +9,7 @@
 - [ ] Entity name is track
 - [Track::external_ids String 1-9,147,483,647 symbols]
 - [Track:id String 1-9,147,483,647 symbols]
-- [Track:is_playable bolean]
+- [Track:is_playable bolean 1 and 0]
 - [Track:name String 1-9,147,483,647 symbols]
 - [Track:type string 1-9,147,483,647 symbols]
 - [Track:popularity int 0-100]
